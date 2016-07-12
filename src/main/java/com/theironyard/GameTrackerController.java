@@ -40,7 +40,7 @@ public class GameTrackerController {
             gameList = games.findAll();
         }
         model.addAttribute("games", gameList);
-        return "home";
+        return "/home";
     }
 
     @RequestMapping(path = "/add-game", method = RequestMethod.POST)
